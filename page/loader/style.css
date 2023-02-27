@@ -1,0 +1,34 @@
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.loader-active {
+  display: flex;
+}
+.logo-loader {
+  position: absolute;
+  left: 620px;
+  top: 230px;
+}
+.loader::after {
+  content: '';
+  margin: 270px auto;
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border-top-color: #3d9b4f;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

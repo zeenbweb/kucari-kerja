@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/page/loader/style.css" />
+    <title>Masuk</title>
+    <link rel="shortcut icon" type="x-icon" href="/images/Vector (4).png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Masuk</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <button type="button" class="btn btn-login" onClick="window.location.href='../pelamar/pelamar.html';">Masuk</button>
+            <p>
+              <a href="./forgotPass/lupa-password" class="forgot-password-link">Lupa Password?</a>
+            </p>
+            <p class="social-text">Atau login dengan akun sosial media kamu</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Daftar</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="User Name" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Daftar" />
+            <p class="social-text">Atau daftar dengan akun sosial media kamu</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Baru Di Kucari Kerja?</h3>
+            <p>Jika kamu belum mempunyai akun Kucari kerja, ayok daftar dan temukan ratusan lowongan pekerjaan yang sesuai untuk kamu hanya di kucari kerja</p>
+            <button class="btn transparent" id="sign-up-btn">Daftar</button>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Sudah daftar?</h3>
+            <p>Jika kamu sudah terdaftar di kucari kerja, ayok login ratusan lowongan pekerjaaan menantimu</p>
+            <button class="btn transparent" id="sign-in-btn">Login</button>
+          </div>
+          <img src="img/register.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        document.querySelector('.loader').classList.remove('loader-active');
+      });
+    </script>
+  </body>
+</html>

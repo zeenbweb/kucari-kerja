@@ -1,0 +1,39 @@
+.sidebar {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category {
+  margin-bottom: 10px;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+.fa-chevron-down {
+  margin-left: auto;
+}
+
+.category-items {
+  margin-left: 20px;
+  display: none;
+}
+
+.category-items.visible {
+  display: block;
+}
+
+.filter-item {
+  margin-right: 10px;
+}

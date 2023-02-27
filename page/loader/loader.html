@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tes2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="loader loader-active">
+      <a class="logo-loader"><img src="./logo.png" bottom="0" alt="logo googlee-play" /></a>
+    </div>
+    <img src="../img-hero.png" width="500" />
+    <script>
+      window.addEventListener('load', () => {
+        document.querySelector('.loader').classList.remove('loader-active');
+      });
+    </script>
+  </body>
+</html>
